@@ -1,7 +1,7 @@
 # Split each line into a list containing the two intervals as a nested lsit, with their min and maxs as nested lists
 pairs = [[line.split(',')[0].split('-'), line.split(',')[1].split('\n')[0].split('-')]for line in open("input.txt", 'r').readlines()]
 
-# Check each pair is the mins and maxs are within eachother, increment tally and print
+# Check each pair if the mins and maxs are within eachother, increment tally and print
 fully_cointained = 0
 for pair in pairs:
     p1_min = min(int(pair[0][0]), int(pair[0][1]))
