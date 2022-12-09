@@ -66,6 +66,7 @@ def move_multiseg(knots, direction, length):
     elif direction == 'D':
         multiseg_head[1] -= length    
 
+    # THEY MOVE IN THE SAME DIRECTION!!!
     for i in range(1, len(knots)):
         seg_head = knots[i-1]
         seg_tail = knots[i]
